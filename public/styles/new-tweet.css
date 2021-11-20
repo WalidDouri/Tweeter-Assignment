@@ -1,0 +1,33 @@
+new-tweet {
+  margin-top: 1em;
+  min-height: 3em;
+  width: 100%;
+  font-weight: bolder;
+  color: #151515;
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+.compose-tweet-box {
+  overflow: auto;
+  width: 100%;
+  border: none;
+  background-color: #f4f1ec;
+  resize: none;
+  border-bottom: 1px solid black;
+}
+
+.compose-tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  font-family: "Bungee", cursive;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 
+.counter {
+  display: flex;
+} */
