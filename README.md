@@ -25,4 +25,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Tweeter Feed"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Feed.PNG)
 
-!["Tweeter Desktop"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Desktop.PNG)
+!["Tweeter Desktop"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Desktop.PNG?raw=true)
+
+
