@@ -21,10 +21,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshots of Tweeter Text-box Character Limit Reached"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_text-box%20character%20limit%20reached.PNG?raw=true)
+!["Screenshots of Tweeter Text-box Character Limit Reached"](https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_text-box%20character%20limit%20reached.PNG?raw=true)
 
-!["Screenshots of Tweeter Feed"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Feed.PNG?raw=true)
+!["Screenshots of Tweeter Feed"](https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Feed.PNG?raw=true)
 
-!["Screenshots of Tweeter Desktop"] (https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Desktop.PNG?raw=true)
+!["Screenshots of Tweeter Desktop"](https://github.com/WalidDouri/Tweeter-Assignment/blob/master/docs/Tweeter_Desktop.PNG?raw=true)
 
 
