@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tweeter Project
 
 Tweeter is a simple, single-page Twitter clone.
@@ -19,7 +18,8 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 - Chance
 - Body-parser
-=======
+
+
 # Tweeter Project
 
 Tweeter is a simple, single-page Twitter clone.
@@ -48,8 +48,3 @@ This repository is the starter code for the project: Students will fork and clon
 !["Tweeter Feed"]
 
 !["Tweeter Desktop"]
-
-<<<<<<< HEAD
->>>>>>> 37514827e544ba7766ade75ae15038dae8cc7da2
-=======
->>>>>>> 37514827e544ba7766ade75ae15038dae8cc7da2
