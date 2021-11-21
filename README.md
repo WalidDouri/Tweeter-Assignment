@@ -49,4 +49,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Tweeter Desktop"]
 
+<<<<<<< HEAD
+>>>>>>> 37514827e544ba7766ade75ae15038dae8cc7da2
+=======
 >>>>>>> 37514827e544ba7766ade75ae15038dae8cc7da2
