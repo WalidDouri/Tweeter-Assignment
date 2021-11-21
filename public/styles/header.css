@@ -1,9 +1,8 @@
 header {
   margin-top: 120px;
   height: 400px;
-  width: 100%;
   background-color: #f38304;
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-image: url("https://i.pinimg.com/originals/7e/c0/63/7ec0635f74c14d8ab20deb626c829f3c.jpg");
 }
 
 .center {
@@ -13,21 +12,17 @@ header {
   flex-direction: column;
 }
 
-/* .center img {
-  width: 300px;
-  height: 300px;
-} */
+.scooby-font {
+  font-family: "Scooby Doo", sans-serif;
+  color: #4b0055;
+}
 
-/* .center h2 {
-  display: flex;
-  align-items: flex-end;
-} */
-
-/* background-color: #f58700;
-background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
-
-*/
-/*
-background-color: #f58700;
-background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-*/
+.profile-picture {
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #79af30;
+  margin-top: 20px;
+}

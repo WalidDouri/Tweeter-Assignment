@@ -27,7 +27,14 @@ new-tweet {
   margin-top: 10px;
 }
 
-/* 
-.counter {
-  display: flex;
-} */
+.fa-flag:hover {
+  color: #128a84;
+}
+
+.fa-retweet:hover {
+  color: #79af30;
+}
+
+.fa-cookie-bite:hover {
+  color: #8e6345;
+}

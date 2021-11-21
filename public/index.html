@@ -7,6 +7,10 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+
+     <!-- Scooby doo font -->
+    <link href="http://fonts.cdnfonts.com/css/scooby-doo" rel="stylesheet">
+                
     
     <!--  Arrow -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bungee&family=Press+Start+2P&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 
+    <!-- link to the icon webpage -->
+    <script src="https://kit.fontawesome.com/18c69a77a3.js" crossorigin="anonymous"></script>
     
     <!-- App CSS - layout -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -41,9 +47,10 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
-   <!-- Timeago scripts 
-    <script type="text/javascript" src="dist/timeago.js"></script>
-    -->
+   <!-- Timeago scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   </head>
 
@@ -58,11 +65,14 @@
     <header>
       <div class= "center">
         <div>
-          <img src="/images/profile-hex.png"> 
+          <img class="profile-picture"src="/images/scooby.png"> 
         </div>
+        
       <br>
       <div>
-          <h2> <strong>My</strong> Name</h2>
+          <font class="scooby-font">
+          <h2><strong>Scooby</strong> Doo!</h2>
+          </font> 
       </div>
     </div>
   </header>
@@ -73,13 +83,12 @@
   <section class="new-tweet">
 
     <div class="error-counter">
-      <p> error 1</p>
+      <p> &#9888; Tweet length cant exceed the character limit. &#9888;</p>
     </div>
-      <!-- error messages?-->
+      
     <div class="error-empty">
-      <p>error 2</p>
+      <p> &#9888; Tweet cant be empty. &#9888;</p>
     </div>
-
 
     <h2>Compose Tweet</h2>
       <div id="post-tweet">
@@ -96,17 +105,9 @@
         </form>
       </div>
       
-    
-
   </section>
 
-  <section id="tweet-container" class="tweet-container">
-    
-  </section>
-    <section>
-      
-      
-    </section>  
+  <section id="tweet-container" class="tweet-container"></section>  
 
 </main>
 </body>

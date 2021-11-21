@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: #4056a1;
+  background-color: #4b0055;
   color: #ffffff;
   height: 120px;
   width: 100%;
@@ -14,8 +14,6 @@ nav {
   height: 120px;
   padding: 60px 2em;
 }
-
-/*https://www.w3schools.com/cssref/pr_class_position.asp */
 
 .logo {
   font-size: 1.5em;
@@ -27,5 +25,3 @@ nav {
   display: flex;
   justify-content: center;
 }
-
-/*https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-angle-double-down*/
