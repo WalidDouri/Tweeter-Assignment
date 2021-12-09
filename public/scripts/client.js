@@ -1,12 +1,12 @@
 // same thing as $(document).ready(function() {
-  $(() => {
-    // renders tweets via ajax page
-    const renderRecentTweet = function(tweet) {
-        $('tweet-container').prepend(createTweetElement(tweet));
-    };
+$(() => {
+  // renders tweets via ajax page
+  const renderRecentTweet = function (tweet) {
+    $('tweet-container').prepend(createTweetElement(tweet));
+  };
 
-    const createTweetElement = function(tweet) {
-        return `
+  const createTweetElement = function (tweet) {
+    return `
       <article class="tweet-feed-box">
         
         <div class="tweet-header">
@@ -32,58 +32,64 @@
 
       </article>
     `;
+  }
+
+  $("#post-tweet").on('submit', (event) => {
+    event.preventDefault();
+    const data = $("#form").serialize();
+    const $tweetText = $("#tweet-input").val();
+    if ($tweetText.length > 140) {
+      console.log("PEAR:", $tweetText.length);
+      console.log("Orange:", $tweetText);
+      console.log("Pizza:", $("#tweet-input").val().length);
+      $(".error-counter").slideDown("fast", "linear");
+      setTimeout(() => {
+        $(".error-counter").slideUp("fast", "linear");
+      }, 3500);
+      return
     }
-
-    $("#post-tweet").on('submit', (event) => {
-        event.preventDefault();
-        const data = $("#form").serialize();
-        const $tweetText = $("#tweet-input").val();
-        if ($tweetText.length > 140) {
-            console.log("PEAR:",$tweetText.length);
-            console.log("Orange:",$tweetText);
-            console.log("Pizza:",$("#tweet-input").val().length);
-            $(".error-counter").slideDown("fast","linear");
-            return
-        }
-        if ($tweetText === "" || $tweetText === null) {
-            console.log("APPLE:",$(".error-empty"));
-            $(".error-empty").slideDown("fast","linear");
-            return
-        } else {
-            $.ajax({
-                method: 'POST',
-                url: '/tweets/',
-                data: data,
-            })
-                .then(function () {
-                    $("#tweet-container").empty();
-                    $("#tweet-input").val("");
-                    $("#counter").text("140");
-                    loadTweets();
-                })
-        }
-    });
-
-    const renderTweets = function (tweets) {
-        for (let tweet of tweets) {
-            const value = createTweetElement(tweet);
-            $('#tweet-container').prepend(value);
-        }
+    if ($tweetText === "" || $tweetText === null) {
+      console.log("APPLE:", $(".error-empty"));
+      $(".error-empty").slideDown("fast", "linear");
+      setTimeout(() => {
+        $(".error-empty").slideUp("fast", "linear");
+      }, 3500);
+      return
+    } else {
+      $.ajax({
+        method: 'POST',
+        url: '/tweets/',
+        data: data,
+      })
+        .then(function () {
+          $("#tweet-container").empty();
+          $("#tweet-input").val("");
+          $("#counter").text("140");
+          loadTweets();
+        })
     }
+  });
 
-    const loadTweets = function() {
-        $.ajax('/tweets', { method: 'GET' })
-            .then(function(tweet) {
-                renderTweets(tweet);
-            });
-    };
+  const renderTweets = function (tweets) {
+    for (let tweet of tweets) {
+      const value = createTweetElement(tweet);
+      $('#tweet-container').prepend(value);
+    }
+  }
 
-    loadTweets();
+  const loadTweets = function () {
+    $.ajax('/tweets', { method: 'GET' })
+      .then(function (tweet) {
+        renderTweets(tweet);
+      });
+  };
 
-    const escape = function (str) {
-        let div = document.createElement("div");
-        div.appendChild(document.createTextNode(str));
-        return div.innerHTML;
-    };
+  loadTweets();
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
 });
