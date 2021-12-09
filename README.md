@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-> > > > > > > 94b79327845fa2d49e9a4da79685349ecee7f057
 
 # Tweeter Project
 
@@ -15,19 +10,15 @@ This repository is the starter code for the project: Students will fork and clon
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
 2. Clone your repository onto your local device.
 3. Install dependencies using the `npm install` command.
-   <<<<<<< HEAD
 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 5. # Go to <http://localhost:8080/> in your browser.
 6. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 7. Go to <http://localhost:8080/> in your browser.
-   > > > > > > > 94b79327845fa2d49e9a4da79685349ecee7f057
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
-  <<<<<<< HEAD
-  =======
 
 # Tweeter Project
 
@@ -47,19 +38,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
-- Chance
-- Body-parser
-
-## Screenshots
-
-!["Tweeter Text-box Character Limit Reached"]
-
-!["Tweeter Feed"]
-
-!["Tweeter Desktop"]
-
-=======
-
 - Chance
 - Body-parser
 
